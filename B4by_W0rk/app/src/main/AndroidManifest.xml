@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<!--    Permission to Internet Access-->
+    <uses-permission android:name="android.permission.INTERNET" />
+<!--    Permission for application to check for Network Access-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--    Permission to Read Files from Storage-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<!--    Permission to Write Files to Storage-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -21,15 +30,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
-
 </manifest>
