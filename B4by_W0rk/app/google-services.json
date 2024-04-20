@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830915822571",
+    "project_id": "b4by-w0rk",
+    "storage_bucket": "b4by-w0rk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830915822571:android:17d8fa7e9679421d57cfae",
+        "android_client_info": {
+          "package_name": "com.jd_s4nd_b0x.b4by_w0rk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWNQsjuVicvWj1MymqqLk_W-E-Bu_wt8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
