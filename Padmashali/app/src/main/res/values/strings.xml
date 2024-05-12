@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Padmashali</string>
+    <string name="welcome">Welcome</string>
+    <string name="continu">Continue</string>
+    <string name="year_info">Year: %d</string>
+    <string name="info_2010">Text information for 2010.</string>
+    <string name="info_2015">Text information for 2015.</string>
+    <string name="info_2020">Text information for 2020.</string>
+    <string name="year_title">Year Title</string>
+</resources>
