@@ -14,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.squareup.picasso.Picasso;
 
+import java.io.File;
+
 public class Rotate_Phone extends AppCompatActivity{
     ImageView rotate_phone;
     Button continue_btn;
@@ -31,7 +33,12 @@ public class Rotate_Phone extends AppCompatActivity{
         rotate_phone = findViewById(R.id.rotate_phone);
         continue_btn = findViewById(R.id.continue_btn);
 
-//        Picasso.get().load(R.drawable.ic_rotate_phone).into(rotate_phone);
+        try {
+            Picasso.get().load(R.drawable.ic_rotate_phone).into(rotate_phone);
+        } catch (Exception e) {
+            // Handle error
+            e.printStackTrace();
+        }
         continue_btn.setOnClickListener(v -> {
             if (isFirstClick) {
                 Toast.makeText(Rotate_Phone.this, "Please make sure your phone is in landscape orientation.", Toast.LENGTH_SHORT).show();
