@@ -20,35 +20,35 @@
     <!-- Left side: Data -->
     <ScrollView
         android:id="@+id/dataScrollView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_below="@id/yearTitle"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="8dp">
 
         <TextView
             android:id="@+id/yearData"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:text="@string/data"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:gravity="center"/>
+            android:textSize="18sp" />
     </ScrollView>
 
     <!-- Right side: Image -->
     <ImageView
         android:id="@+id/yearImage"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_below="@id/yearTitle"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="45dp"
-        android:src="@drawable/black_image"
-        android:background="@android:color/black" />
+        android:layout_marginEnd="80dp"
+        android:background="@android:color/black"
+        android:src="@drawable/black_image" />
 
     <!-- Previous button -->
     <ImageButton
@@ -59,7 +59,7 @@
         android:background="@android:color/darker_gray"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="53dp"
         android:layout_marginBottom="18dp"
         app:tint="@android:color/white" />
 
@@ -72,7 +72,7 @@
         android:background="@android:color/darker_gray"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="53dp"
         android:layout_marginBottom="18dp"
         app:tint="@android:color/white" />
 

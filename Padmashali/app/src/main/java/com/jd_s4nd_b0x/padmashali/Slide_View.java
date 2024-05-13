@@ -1,6 +1,7 @@
 package com.jd_s4nd_b0x.padmashali;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,6 +63,9 @@ public class Slide_View extends AppCompatActivity {
                     updateYearInfo(currentYearIndex);
                 } else {
                     Toast.makeText(Slide_View.this, "Already at the end", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Slide_View.this, rerotate_phone.class);
+                    startActivity(intent);
+                    finish();
                 }
             }
         });

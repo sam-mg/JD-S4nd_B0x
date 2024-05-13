@@ -13,13 +13,25 @@
         android:theme="@style/Theme.Padmashali"
         tools:targetApi="31">
         <activity
+            android:name=".rerotate_phone"
+            android:exported="false" />
+        <activity
+            android:name=".Final_Result"
+            android:exported="false" />
+        <activity
+            android:name=".questions_mcq"
+            android:exported="false" />
+        <activity
+            android:name=".roll_number"
+            android:exported="false" />
+        <activity
             android:name=".Slide_View"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Rotate_Phone"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
