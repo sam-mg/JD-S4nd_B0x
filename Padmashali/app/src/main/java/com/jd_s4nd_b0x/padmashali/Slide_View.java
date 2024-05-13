@@ -30,11 +30,7 @@ public class Slide_View extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_slide_view);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
         yearTitle = findViewById(R.id.yearTitle);
         yearData = findViewById(R.id.yearData);
         btnPrevious = findViewById(R.id.btnPrevious);
@@ -76,11 +72,17 @@ public class Slide_View extends AppCompatActivity {
         yearTitle.setText(String.valueOf(years[index]));
 
         // Update year image
-        yearImage.setImageResource(getYearImage(years[index]));
+        int imageResource = getYearImage(years[index]);
+        if (imageResource != 0) {
+            yearImage.setImageResource(imageResource);
+        } else {
+            yearImage.setBackgroundResource(R.drawable.black_image);
+        }
 
         // Update year data
         yearData.setText(getString(getResources().getIdentifier("info_" + years[index], "string", getPackageName())));
     }
+
 
     // Method to get image resource for a particular year (sample implementation)
     private int getYearImage(int year) {

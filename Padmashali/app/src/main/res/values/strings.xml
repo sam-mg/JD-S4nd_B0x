@@ -5,6 +5,9 @@
     <string name="year_info">Year: %d</string>
     <string name="info_2010">Text information for 2010.</string>
     <string name="info_2015">Text information for 2015.</string>
-    <string name="info_2020">Text information for 2020.</string>
+    <string name="info_2020">The year 2020 was heavily defined by the COVID-19 pandemic, which led to global social and economic disruption, mass cancellations and postponements of events, worldwide lockdowns and the largest economic recession since the Great Depression in the 1930s.\nGeospatial World also called 2020 "the worst year in terms of climate change" in part due to major climate disasters worldwide, including major bushfires in Australia and the western United States, as well as extreme tropical cyclone activity affecting large parts of North America.\nA United Nations progress report published in December 2020 indicated that none of the international Sustainable Development Goals for 2020 were achieved.\nTime magazine used its sixth ever Red X cover to declare 2020 "the worst year ever", although the cover article itself did not go as far, instead saying "There have been worse years in U.S. history, and certainly worse years in world history, but most of us alive today have seen nothing like this one."\nThe Golden Raspberry Awards also awarded the year the Special Governor's Award for The Worst Calendar Year EVER! at their 41st ceremony.</string>
     <string name="year_title">Year Title</string>
+    <string name="title">Title</string>
+    <string name="data">Data</string>
+    <string name="year_data">Year Data</string>
 </resources>
