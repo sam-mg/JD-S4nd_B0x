@@ -4,25 +4,21 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.SeekBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Slide_View extends AppCompatActivity {
     private TextView yearTitle, yearData;
     private ImageButton btnPrevious, btnNext;
     private ImageView yearImage;
 
-    private int[] years = {1804, 1810, 1818, 1820, 1830, 1842, 1844, 1852, 1855, 1857, 1960, 1970, 1980, 1990, 2000, 2010, 2020};
+    private int[] years = {1804, 1810, 1818, 1820, 1830, 1842, 1844, 1852, 1855, 1857, 1895, 1900, 1952, 1953, 1955, 1958, 1960, 1970, 1980, 1990, 2000, 2010, 2020};
     private int currentYearIndex = 0;
 
     @SuppressLint("WrongViewCast")
@@ -84,7 +80,17 @@ public class Slide_View extends AppCompatActivity {
         }
 
         // Update year data
-        yearData.setText(getString(getResources().getIdentifier("info_" + years[index], "string", getPackageName())));
+        String resourceName = "info_" + years[index];
+        int resId = getResources().getIdentifier(resourceName, "string", getPackageName());
+        if (resId != 0) {
+            yearData.setText(getString(resId));
+        } else {
+            yearData.setText("Information not available");
+        }
+
+        // Reset scroll position to top
+        ScrollView dataScrollView = findViewById(R.id.dataScrollView);
+        dataScrollView.scrollTo(0, 0);
     }
 
 
@@ -112,6 +118,18 @@ public class Slide_View extends AppCompatActivity {
                 return R.drawable.ic_image_1855;
             case 1857:
                 return R.drawable.ic_image_1857;
+            case 1895:
+                return R.drawable.ic_image_1895;
+            case 1900:
+                return R.drawable.ic_image_1900;
+            case 1952:
+                return R.drawable.ic_image_1952;
+            case 1953:
+                return R.drawable.ic_image_1953;
+            case 1955:
+                return R.drawable.ic_image_1955;
+            case 1958:
+                return R.drawable.ic_image_1958;
             case 1960:
                 return R.drawable.ic_image_1960;
             case 1970:

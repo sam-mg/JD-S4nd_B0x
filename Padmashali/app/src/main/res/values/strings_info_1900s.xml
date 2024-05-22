@@ -1,0 +1,12 @@
+<resources>
+    <string name="info_1895">Northrop Loom: In the 1890s, the Northrop Loom became popular due to its fully automatic features, significantly improving weaving efficiency.</string>
+    <string name="info_1900">Draper Loom: During the early 20th century, the Draper loom was widely used, known for its high speed and efficiency in producing woven fabrics.</string>
+    <string name="info_1952">Projectile loom: The projectile weaving machine was invented by Sulzer in 1952 in Switzerland. Here, the weft yarn is inserted in a projectile. These looms are very flexible and suitable for universal use.</string>
+    <string name="info_1953">Circular loom: The weft yarns are simultaneously interlaced with many warp yarns. These looms can be used to make tubular fabrics.</string>
+    <string name="info_1955">Water jet loom: The weaving is done by the yarn carried by the water jet. These looms are very fast.</string>
+    <string name="info_1958">Air-jet loom: The weaving is done by the yarn carried by the air jet. These looms are very fast.</string>
+    <string name="info_1960">Rapier Loom: The weaving is done by the rapier. The rapier is like a solid stick, which carries the weft yarn.</string>
+    <string name="info_1970">The Rapier Loom: The Rapier Loom can be divided into two types: single rapier loom and double rapier loom. These are the best loom to make any kind of yarn dyed fabric.</string>
+    <string name="info_1980">The Rapier Loom was mostly used in the textile industries. The loom was mostly imported from Russia, so no new technology was developed during this time.</string>
+    <string name="info_1990">The Rapier Loom was mostly used in the textile industries. The loom was mostly imported from Russia, so no new technology was developed during this time.</string>
+</resources>

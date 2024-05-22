@@ -18,13 +18,15 @@
         android:layout_marginTop="16dp" />
 
     <!-- Left side: Data -->
+
+    <!-- Right side: Image -->
     <ScrollView
         android:id="@+id/dataScrollView"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
+        android:layout_width="262dp"
+        android:layout_height="245dp"
         android:layout_below="@id/yearTitle"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="115dp"
         android:layout_marginTop="45dp"
         android:layout_marginEnd="8dp">
 
@@ -35,18 +37,17 @@
             android:gravity="center"
             android:text="@string/data"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="22sp" />
     </ScrollView>
 
-    <!-- Right side: Image -->
     <ImageView
         android:id="@+id/yearImage"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
+        android:layout_width="253dp"
+        android:layout_height="256dp"
         android:layout_below="@id/yearTitle"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="115dp"
         android:background="@android:color/black"
         android:src="@drawable/black_image" />
 
@@ -60,7 +61,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="53dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="25dp"
         app:tint="@android:color/white" />
 
     <!-- Next button -->
@@ -73,7 +74,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="53dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="25dp"
         app:tint="@android:color/white" />
 
 </RelativeLayout>

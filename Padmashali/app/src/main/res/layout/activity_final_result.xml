@@ -29,15 +29,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"/>
 
-    <Button
-        android:id="@+id/copyButton"
+    <TextView
+        android:id="@+id/flagTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:layout_below="@id/rollNumberTextView"
-        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/copy_flag"
-        android:onClick="copyScoreToClipboard" />
+        android:layout_marginTop="25dp"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/messageTextView"
