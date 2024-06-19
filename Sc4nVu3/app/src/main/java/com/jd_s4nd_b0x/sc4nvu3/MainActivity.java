@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         });
         button = findViewById(R.id.welcome_btn);
         button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Camera_Check.class);
+            Intent intent = new Intent(MainActivity.this, qr_page.class);
             startActivity(intent);
         });
     }

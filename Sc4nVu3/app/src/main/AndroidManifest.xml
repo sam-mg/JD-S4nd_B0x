@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-feature
         android:name="android.hardware.camera.any"
         android:required="true" />
@@ -25,9 +24,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sc4nVu3"
         tools:targetApi="31">
-        <activity
-            android:name=".Camera_Check"
-            android:exported="false" />
         <activity
             android:name=".qr_page"
             android:exported="false" />

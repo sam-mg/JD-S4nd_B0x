@@ -32,7 +32,8 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.gms:play-services-vision:20.1.3")
+//    implementation(libs.play.services.vision)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
