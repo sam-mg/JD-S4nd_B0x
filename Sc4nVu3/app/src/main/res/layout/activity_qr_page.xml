@@ -5,8 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".qr_page"
+    tools:context=".CameraActivity"
     android:background="@color/black">
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/no_camera_image"
+        android:visibility="gone" />
 
     <ImageButton
         android:id="@+id/image_from_phone"
@@ -16,29 +37,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <FrameLayout
-        android:id="@+id/camera_preview"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        app:layout_constraintBottom_toTopOf="@id/button_capture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_from_phone" />
-
-    <ImageView
-        android:id="@+id/no_camera"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/no_camera_image"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@id/button_capture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_from_phone" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/button_capture"
@@ -47,48 +47,18 @@
         android:text="@string/scan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/camera_preview"
-        app:layout_constraintVertical_bias="0.2" />
-
-    <SurfaceView
-        android:id="@+id/camera"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/button_capture"
-        app:layout_constraintEnd_toEndOf="@id/camera_preview"
-        app:layout_constraintStart_toStartOf="@id/camera_preview"
-        app:layout_constraintTop_toTopOf="@id/camera_preview" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/text_view_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text=""
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/button_capture"
-        app:layout_constraintEnd_toEndOf="@id/camera_preview"
-        app:layout_constraintStart_toStartOf="@id/camera_preview"
-        app:layout_constraintTop_toTopOf="@id/camera_preview" />
-
-    <Button
-        android:id="@+id/copy_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Copy"
-        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/open_link"
-        app:layout_constraintTop_toBottomOf="@id/text" />
-
-    <Button
-        android:id="@+id/open_link"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Link"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/copy_text"
-        app:layout_constraintTop_toBottomOf="@id/text" />
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
