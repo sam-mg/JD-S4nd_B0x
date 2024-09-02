@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+        <!-- Tittle -->
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -25,39 +26,17 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp" />
 
+        <!-- Logee -->
         <Button
             android:id="@+id/button_logee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Logee"
             android:textColor="@color/black"
+            android:textSize="24sp"
             android:background="@drawable/button_background"
             android:layout_below="@id/title"
             android:layout_marginTop="32dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true" />
-
-        <Button
-            android:id="@+id/button_strings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Strings"
-            android:textColor="@color/black"
-            android:background="@drawable/button_background"
-            android:layout_below="@id/button_logee"
-            android:layout_marginTop="16dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true" />
-
-        <Button
-            android:id="@+id/button_flag_preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Flag Preview"
-            android:textColor="@color/black"
-            android:background="@drawable/button_background"
-            android:layout_below="@id/button_strings"
-            android:layout_marginTop="16dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
