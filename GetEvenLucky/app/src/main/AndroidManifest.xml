@@ -13,6 +13,12 @@
         android:theme="@style/Theme.GetEvenLucky"
         tools:targetApi="31">
         <activity
+            android:name=".Happy"
+            android:exported="false" />
+        <activity
+            android:name=".Logee.Log_Doubt"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
