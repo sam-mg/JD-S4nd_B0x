@@ -29,7 +29,7 @@ public class Log_Doubt extends AppCompatActivity {
             return insets;
         });
         encryptedFlag = a.getEncryptedFlag();
-        Log.d("MainActivity", "Flag: " + encryptedFlag);
+        Log.d("Logee", "Flag: " + encryptedFlag);
         editTextFlag = findViewById(R.id.editTextFlag);
         Button buttonSubmit = findViewById(R.id.buttonSubmit);
         buttonSubmit.setOnClickListener(v -> {
