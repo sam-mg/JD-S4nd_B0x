@@ -67,5 +67,19 @@
             android:layout_marginTop="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
+
+        <!-- Login_Activity -->
+        <Button
+            android:id="@+id/button_Login_Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/button_Shared_Preferences"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </ScrollView>

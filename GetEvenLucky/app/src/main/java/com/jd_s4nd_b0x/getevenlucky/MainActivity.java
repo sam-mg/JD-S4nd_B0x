@@ -1,6 +1,5 @@
 package com.jd_s4nd_b0x.getevenlucky;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -12,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.jd_s4nd_b0x.getevenlucky.Logee.Log_Doubt;
+import com.jd_s4nd_b0x.getevenlucky.Login_Activity.Login_Activity;
 import com.jd_s4nd_b0x.getevenlucky.SharedPrefs.Shared_Preferences;
 import com.jd_s4nd_b0x.getevenlucky.Stringee.Strings;
 
@@ -35,8 +35,12 @@ public class MainActivity extends AppCompatActivity {
         Button stringeeButton = findViewById(R.id.button_stringee);
         stringeeButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Strings.class)));
 
-//        Shared Preferenes Button
+//        Shared Preferences Button
         Button shared_preferencesButton = findViewById(R.id.button_Shared_Preferences);
         shared_preferencesButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Shared_Preferences.class)));
+
+//        Login Activity Button
+        Button login_activityButton = findViewById(R.id.button_Login_Activity);
+        login_activityButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Login_Activity.class)));
     }
 }
