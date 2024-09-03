@@ -39,5 +39,19 @@
             android:layout_marginTop="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
+
+        <!-- Stringee -->
+        <Button
+            android:id="@+id/button_stringee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stringee"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/button_logee"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </ScrollView>
