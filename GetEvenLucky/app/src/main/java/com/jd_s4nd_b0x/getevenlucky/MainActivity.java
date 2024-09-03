@@ -12,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.jd_s4nd_b0x.getevenlucky.Logee.Log_Doubt;
+import com.jd_s4nd_b0x.getevenlucky.SharedPrefs.Shared_Preferences;
 import com.jd_s4nd_b0x.getevenlucky.Stringee.Strings;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,5 +34,9 @@ public class MainActivity extends AppCompatActivity {
 //        Stringee Button
         Button stringeeButton = findViewById(R.id.button_stringee);
         stringeeButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Strings.class)));
+
+//        Shared Preferenes Button
+        Button shared_preferencesButton = findViewById(R.id.button_Shared_Preferences);
+        shared_preferencesButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Shared_Preferences.class)));
     }
 }
