@@ -96,7 +96,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
 
-        <!-- Fire Base -->
+        <!-- Protected Activity -->
         <Button
             android:id="@+id/button_Protected_Activity"
             android:layout_width="wrap_content"
@@ -106,6 +106,20 @@
             android:textSize="24sp"
             android:background="@drawable/button_background"
             android:layout_below="@id/button_Fire_Base"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Collision Avoid -->
+        <Button
+            android:id="@+id/button_Collision_Avoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collision Avoid"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/button_Protected_Activity"
             android:layout_marginTop="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
