@@ -45,12 +45,7 @@ public class Fire_Base extends AppCompatActivity {
         buttonCheck = findViewById(R.id.buttonCheck);
         textViewResult = findViewById(R.id.textViewResult);
 
-        buttonCheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkKey();
-            }
-        });
+        buttonCheck.setOnClickListener(view -> checkKey());
     }
 
     private void checkKey() {

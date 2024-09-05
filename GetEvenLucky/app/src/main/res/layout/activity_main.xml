@@ -95,5 +95,19 @@
             android:layout_marginTop="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
+
+        <!-- Fire Base -->
+        <Button
+            android:id="@+id/button_Protected_Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protected Activity"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/button_Fire_Base"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </ScrollView>

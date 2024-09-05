@@ -10,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.jd_s4nd_b0x.getevenlucky.Exported.Home_Activity;
 import com.jd_s4nd_b0x.getevenlucky.Fire_Base.Fire_Base;
 import com.jd_s4nd_b0x.getevenlucky.Logee.Log_Doubt;
 import com.jd_s4nd_b0x.getevenlucky.Login_Activity.Login_Activity;
@@ -47,5 +48,10 @@ public class MainActivity extends AppCompatActivity {
 //        Fire Base Button
         Button fire_baseButton = findViewById(R.id.button_Fire_Base);
         fire_baseButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Fire_Base.class)));
+
+//        Protected Activity Button
+        Button protected_activityButton = findViewById(R.id.button_Protected_Activity);
+        protected_activityButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Home_Activity.class)));
+
     }
 }

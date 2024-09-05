@@ -13,6 +13,16 @@
         android:theme="@style/Theme.GetEvenLucky"
         tools:targetApi="31">
         <activity
+            android:name=".Exported.Protected_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Exported.Home_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.jd_s4nd_b0x.getevenlucky.VULNERABLE_ACTION" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Fire_Base.Fire_Base"
             android:exported="false" />
         <activity
@@ -35,7 +45,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
