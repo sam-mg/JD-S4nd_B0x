@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.jd_s4nd_b0x.getevenlucky.Collision.Collision_Avoid;
 import com.jd_s4nd_b0x.getevenlucky.Exported.Home_Activity;
 import com.jd_s4nd_b0x.getevenlucky.Fire_Base.Fire_Base;
+import com.jd_s4nd_b0x.getevenlucky.JNI_Check.JNIII;
 import com.jd_s4nd_b0x.getevenlucky.Logee.Log_Doubt;
 import com.jd_s4nd_b0x.getevenlucky.Login_Activity.Login_Activity;
 import com.jd_s4nd_b0x.getevenlucky.SharedPrefs.Shared_Preferences;
@@ -57,5 +58,9 @@ public class MainActivity extends AppCompatActivity {
 //        Collision Avoid Button
         Button collision_avoidButton = findViewById(R.id.button_Collision_Avoid);
         collision_avoidButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Collision_Avoid.class)));
+
+//        JNI Check Button
+        Button jni_checkButton = findViewById(R.id.button_JNI_Check);
+        jni_checkButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, JNIII.class)));
     }
 }

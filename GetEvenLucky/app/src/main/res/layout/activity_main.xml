@@ -123,5 +123,19 @@
             android:layout_marginTop="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />
+
+        <!-- JNI Check -->
+        <Button
+            android:id="@+id/button_JNI_Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JNI_Check"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/button_Collision_Avoid"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </ScrollView>
