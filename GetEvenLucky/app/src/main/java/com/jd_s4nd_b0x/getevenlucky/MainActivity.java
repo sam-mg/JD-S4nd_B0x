@@ -16,6 +16,7 @@ import com.jd_s4nd_b0x.getevenlucky.Fire_Base.Fire_Base;
 import com.jd_s4nd_b0x.getevenlucky.JNI_Check.JNIII;
 import com.jd_s4nd_b0x.getevenlucky.Logee.Log_Doubt;
 import com.jd_s4nd_b0x.getevenlucky.Login_Activity.Login_Activity;
+import com.jd_s4nd_b0x.getevenlucky.SQL_DataBase.DB_Main;
 import com.jd_s4nd_b0x.getevenlucky.SharedPrefs.Shared_Preferences;
 import com.jd_s4nd_b0x.getevenlucky.Stringee.Strings;
 
@@ -62,5 +63,9 @@ public class MainActivity extends AppCompatActivity {
 //        JNI Check Button
         Button jni_checkButton = findViewById(R.id.button_JNI_Check);
         jni_checkButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, JNIII.class)));
+
+//        DB Check Button
+        Button DB_checkButton = findViewById(R.id.button_DB_Check);
+        DB_checkButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, DB_Main.class)));
     }
 }
