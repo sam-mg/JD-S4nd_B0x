@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Mulyam"
         tools:targetApi="31">
         <activity
+            android:name=".loading_view"
+            android:exported="false" />
+        <activity
             android:name=".search_view"
             android:exported="false" />
         <activity
