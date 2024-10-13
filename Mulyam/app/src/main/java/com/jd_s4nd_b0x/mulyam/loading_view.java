@@ -55,10 +55,16 @@ public class Loading_View extends AppCompatActivity {
                 assert response.body() != null;
                 String stockData = response.body().string();
 
-                Intent intent = new Intent(Loading_View.this, Final_View.class);
-                intent.putExtra("stockData", stockData);
-                startActivity(intent);
-                finish();
+                if (stockData.contains("\"trailingPegRatio\":null")) {
+                    Intent intent = new Intent(Loading_View.this, Invalid_Symbol.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Intent intent = new Intent(Loading_View.this, Final_View.class);
+                    intent.putExtra("stockData", stockData);
+                    startActivity(intent);
+                    finish();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
