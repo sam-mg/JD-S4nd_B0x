@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-public class search_view extends AppCompatActivity {
+public class Search_View extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class search_view extends AppCompatActivity {
                 Toast.makeText(this, "Enter some Stock Name", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Getting Stock Details", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, loading_view.class);
+                Intent intent = new Intent(this, Loading_View.class);
                 intent.putExtra("stockName", stockname);
                 startActivity(intent);
             }

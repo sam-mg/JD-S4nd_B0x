@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Checking for internet access...", Toast.LENGTH_SHORT).show();
         handler.postDelayed(() -> {
             if (isInternetAvailable()) {
-                Intent intent = new Intent(MainActivity.this, search_view.class);
+                Intent intent = new Intent(MainActivity.this, Search_View.class);
                 startActivity(intent);
                 finish();
             } else {

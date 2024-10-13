@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Final_View"
+    android:background="@color/black">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/longNameInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/longNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Long Name"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/symbolInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/symbolTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Symbol"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countryInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/countryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/currentPriceInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currentPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Price"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fetchedTimeInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fetchedTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fetched Time"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

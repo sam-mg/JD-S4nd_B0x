@@ -16,10 +16,13 @@
         android:theme="@style/Theme.Mulyam"
         tools:targetApi="31">
         <activity
-            android:name=".loading_view"
+            android:name=".Final_View"
             android:exported="false" />
         <activity
-            android:name=".search_view"
+            android:name=".Loading_View"
+            android:exported="false" />
+        <activity
+            android:name=".Search_View"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
