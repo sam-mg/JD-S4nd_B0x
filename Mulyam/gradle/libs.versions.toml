@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.1"
+agp = "8.7.3"
 bcprovJdk15on = "1.70"
 chaquopy = "10.0.0"
 chaquopyVersion = "15.0.1"
